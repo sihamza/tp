@@ -1,0 +1,8 @@
+<h1> Bonjour {{ nom }} </h1>
+<h4> size of name : {{ nom.length }} </h4>
+<h4> name MAJ : {{ nom.toUpperCase() }} </h4>
+<h4> {{ infos() }} </h4>
+<input [value]="nom" [disabled]="actif" (keyup.enter)="onKeyUp($event)" /> <button bind-disabled="!actif" (click)="onAfficher()" > Afficher</button>
+<br>
+<input (keyup.enter)="onAfficherContenu(textbox.value)" type ="text" #textbox />
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button> <br>
