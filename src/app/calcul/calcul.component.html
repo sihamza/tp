@@ -1,6 +1,6 @@
 <h1>Operations Calcul</h1>
- <input type="number" (keyup.enter)="getval(s1.value)" #s1 /><br>
+ <input type="number" (keyup)="checked(s1,s2)" (keyup)="getval(s1.value)" #s1 /><br>
 <p> le carre = {{ carre * carre }} </p>
- <input type="number" #s2/><br>
+ <input type="number" (keyup)="checked(s1,s2)" #s2/><br>
 <p> somme : {{ somme }}</p><br>
-<button (click)="somme_event(s1.value,s2.value)" > calcul </button>
+<button (click)="somme_event(s1.value,s2.value)" [disabled]="check"> calcul </button>

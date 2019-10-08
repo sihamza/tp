@@ -10,6 +10,8 @@ import { Ex2bindingComponent } from './ex2binding/ex2binding.component';
 import { CalculComponent } from './calcul/calcul.component';
 import {FormsModule} from '@angular/forms';
 import { ProduitComponent } from './produit/produit.component';
+import { CandidatViewComponent } from './candidat-view/candidat-view.component';
+import { Binding2wayComponent } from './binding2way/binding2way.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProduitComponent } from './produit/produit.component';
     TableauComponentComponent,
     Ex2bindingComponent,
     CalculComponent,
-    ProduitComponent 
+    ProduitComponent,
+    CandidatViewComponent,
+    Binding2wayComponent 
   ],
   imports: [
     BrowserModule,
