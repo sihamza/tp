@@ -6,14 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calcul.component.css']
 })
 export class CalculComponent implements OnInit {
-  somme:integer ;
-  carre:integer ;
-  somme(){
-
+  somme=0 ;
+  carre=0 ;
+  
+  getval(x:number) {
+    this.carre = x ;
   }
-  carre(){
 
+  somme_event(x:number,y:number){
+     this.somme = Number(x) + Number(y) ;
   }
+
   constructor() { }
 
   ngOnInit() {

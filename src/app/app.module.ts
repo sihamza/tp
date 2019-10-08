@@ -8,7 +8,8 @@ import { BindingComponent } from './binding/binding.component';
 import { TableauComponentComponent  } from './tableau-component/tableau-component.component';
 import { Ex2bindingComponent } from './ex2binding/ex2binding.component';
 import { CalculComponent } from './calcul/calcul.component';
-
+import {FormsModule} from '@angular/forms';
+import { ProduitComponent } from './produit/produit.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { CalculComponent } from './calcul/calcul.component';
     BindingComponent,
     TableauComponentComponent,
     Ex2bindingComponent,
-    CalculComponent 
+    CalculComponent,
+    ProduitComponent 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

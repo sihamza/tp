@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BindingComponent implements OnInit {
   
   nom:string ="ERICAANDBIAFTW";
-  age:integer = 21 ;
-  contenu:sting = "" ;
+  age = 21 ;
+  contenu = "" ;
   actif:boolean = false ;
   message:string = "DSI" ;
   constructor() { }
